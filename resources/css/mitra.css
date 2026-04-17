@@ -1,0 +1,227 @@
+.adminlte-modern {
+    background:
+        radial-gradient(circle at 15% -10%, rgba(56, 189, 248, 0.16), transparent 45%),
+        radial-gradient(circle at 90% 10%, rgba(16, 185, 129, 0.12), transparent 42%),
+        var(--shell-bg);
+}
+
+:root {
+    --mitra-sidebar-width-mobile: min(86vw, 280px);
+    --mitra-sidebar-width-desktop: 272px;
+}
+
+.mitra-no-scroll {
+    overflow: hidden;
+}
+
+.mitra-shell {
+    min-height: 100vh;
+}
+
+.mitra-sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 40;
+    width: var(--mitra-sidebar-width-mobile);
+    transform: translateX(-100%);
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 8px 0 28px rgba(2, 6, 23, 0.45);
+}
+
+.mitra-sidebar.is-open {
+    transform: translateX(0);
+}
+
+.mitra-main {
+    min-height: 100vh;
+}
+
+.mitra-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 30;
+    background: rgba(2, 6, 23, 0.6);
+}
+
+.mitra-overlay.is-open {
+    display: block;
+}
+
+.mitra-mobile-only {
+    display: inline-flex;
+}
+
+.mitra-sidebar-brand {
+    flex-shrink: 0;
+    min-height: 80px;
+}
+
+.mitra-brand-title {
+    line-height: 1.2;
+}
+
+.mitra-sidebar-nav {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(148, 163, 184, 0.45) transparent;
+    padding: 1.25rem 0.75rem;
+}
+
+.mitra-sidebar-nav::-webkit-scrollbar {
+    width: 6px;
+}
+
+.mitra-sidebar-nav::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+    background: rgba(148, 163, 184, 0.45);
+}
+
+.mitra-sidebar-nav > * + * {
+    margin-top: 0.5rem;
+}
+
+.mitra-nav-link {
+    min-height: 48px;
+    padding: 0.75rem 1rem;
+    border-radius: 0.9rem;
+}
+
+.mitra-nav-icon {
+    height: 1.6rem;
+    width: 1.6rem;
+    font-size: 0.72rem;
+}
+
+.mitra-nav-icon-glyph {
+    font-size: 0.62rem;
+    line-height: 1;
+}
+
+.mitra-nav-label {
+    line-height: 1.2;
+}
+
+.mitra-nav-chevron {
+    font-size: 0.75rem;
+}
+
+.mitra-nav-children {
+    padding: 0 0.75rem 0.75rem;
+}
+
+.mitra-nav-child {
+    min-height: 38px;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8125rem;
+}
+
+.mitra-nav-child-icon {
+    height: 1rem;
+    width: 1rem;
+    font-size: 0.625rem;
+}
+
+.mitra-topbar {
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+}
+
+@media (min-width: 1024px) {
+    .mitra-shell {
+        display: block;
+    }
+
+    .mitra-sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: var(--mitra-sidebar-width-desktop);
+        transform: none !important;
+        height: 100vh;
+    }
+
+    .mitra-main {
+        margin-left: var(--mitra-sidebar-width-desktop);
+    }
+
+    .mitra-overlay {
+        display: none !important;
+    }
+
+    .mitra-mobile-only {
+        display: none !important;
+    }
+
+    .mitra-no-scroll {
+        overflow: auto;
+    }
+}
+
+@media (max-width: 1279px) {
+    :root {
+        --mitra-sidebar-width-desktop: 260px;
+    }
+}
+
+@media (max-width: 520px) {
+    .mitra-topbar-profile-name {
+        display: none;
+    }
+}
+
+.mitra-hero-card {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(132deg, #0f172a 0%, #1e293b 58%, #0f766e 100%);
+}
+
+.mitra-hero-card::before {
+    content: "";
+    position: absolute;
+    top: -90px;
+    right: -80px;
+    width: 220px;
+    height: 220px;
+    border-radius: 999px;
+    background: rgba(103, 232, 249, 0.2);
+    filter: blur(10px);
+}
+
+.mitra-queue-card {
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid #0f766e;
+    border-radius: 0.9rem;
+    background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+    padding: 0.9rem;
+}
+
+.mitra-queue-card-cyan {
+    border-left-color: #0e7490;
+}
+
+.mitra-quick-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.8rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.8rem;
+    background: #ffffff;
+    padding: 0.72rem 0.8rem;
+    color: #0f172a;
+    text-decoration: none;
+    transition: all 0.18s ease;
+}
+
+.mitra-quick-link:hover {
+    border-color: #cbd5e1;
+    background: #f8fafc;
+    transform: translateY(-1px);
+}

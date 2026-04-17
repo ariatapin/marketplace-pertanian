@@ -1,0 +1,58 @@
+@import url("https://fonts.bunny.net/css?family=plus-jakarta-sans:400,500,600,700,800|sora:500,600,700&display=swap");
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --shell-bg: #eef3f8;
+        --surface: #ffffff;
+        --surface-soft: #f8fbfd;
+        --text-main: #0f172a;
+        --text-muted: #475569;
+        --ring-primary: #0ea5e9;
+    }
+
+    body {
+        font-family: "Plus Jakarta Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: var(--text-main);
+        background-color: var(--shell-bg);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: "Sora", "Plus Jakarta Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+        letter-spacing: -0.01em;
+    }
+
+    [x-cloak] {
+        display: none !important;
+    }
+}
+
+@layer components {
+    .surface-card {
+        @apply rounded-2xl border border-slate-200 bg-white shadow-sm;
+    }
+
+    .surface-card-soft {
+        @apply rounded-2xl border border-slate-200/70 bg-slate-50 shadow-sm;
+    }
+
+    .chip-stat {
+        @apply inline-flex items-center gap-1 rounded-full border px-2.5 py-1 text-xs font-semibold;
+    }
+
+    .link-ghost {
+        @apply rounded-lg px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-slate-900;
+    }
+
+    .btn-ink {
+        @apply rounded-lg bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800;
+    }
+
+    .btn-mint {
+        @apply rounded-lg bg-emerald-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-emerald-700;
+    }
+}

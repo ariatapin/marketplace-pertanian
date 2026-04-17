@@ -1,0 +1,78 @@
+{
+  "_module.esm-D5JZdgWh.js": {
+    "file": "assets/module.esm-D5JZdgWh.js",
+    "name": "module.esm"
+  },
+  "_profile-location-7bSXXSJw.js": {
+    "file": "assets/profile-location-7bSXXSJw.js",
+    "name": "profile-location"
+  },
+  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2": {
+    "file": "assets/fa-brands-400-BP5tdqmh.woff2",
+    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2"
+  },
+  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2": {
+    "file": "assets/fa-regular-400-nyy7hhHF.woff2",
+    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2"
+  },
+  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2": {
+    "file": "assets/fa-solid-900-DRAAbZTg.woff2",
+    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2"
+  },
+  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-v4compatibility.woff2": {
+    "file": "assets/fa-v4compatibility-DD84SGiu.woff2",
+    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-v4compatibility.woff2"
+  },
+  "resources/css/admin.css": {
+    "file": "assets/admin-DISFkwDe.css",
+    "src": "resources/css/admin.css",
+    "isEntry": true
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-oXBFsa5J.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/css/marketplace.css": {
+    "file": "assets/marketplace-0hiHcmfu.css",
+    "src": "resources/css/marketplace.css",
+    "isEntry": true
+  },
+  "resources/css/mitra.css": {
+    "file": "assets/mitra-Db8BMxv7.css",
+    "src": "resources/css/mitra.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-WKuBM6om.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "imports": [
+      "_module.esm-D5JZdgWh.js",
+      "_profile-location-7bSXXSJw.js"
+    ]
+  },
+  "resources/js/marketplace.js": {
+    "file": "assets/marketplace-Cwi6--f3.js",
+    "name": "marketplace",
+    "src": "resources/js/marketplace.js",
+    "isEntry": true,
+    "imports": [
+      "_profile-location-7bSXXSJw.js"
+    ]
+  },
+  "resources/js/panel.js": {
+    "file": "assets/panel-D1Z6QBrv.js",
+    "name": "panel",
+    "src": "resources/js/panel.js",
+    "isEntry": true,
+    "imports": [
+      "_module.esm-D5JZdgWh.js",
+      "_profile-location-7bSXXSJw.js"
+    ],
+    "css": [
+      "assets/panel-B3bm3Nq-.css"
+    ]
+  }
+}
